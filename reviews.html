@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-rew.css">
+    <style>
+        :root {
+            --dark-green: #0a2e0a;
+            --neon-green: #00ff00;
+            --black: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" data-aos="fade-right" >
+                <img src="images/logo.png" alt="Логотип" class="me-2" width="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" ><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">О компании</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Товары</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="reviews.html">Отзывы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Герой-секция отзывов -->
+<section class="reviews-hero text-center d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+        <h1 class="display-4 fw-bold mb-3 text-neon">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h1>
+        <p class="lead text-white mb-4" data-aos="fade-up" data-aos-delay="100">
+            Более 1500 довольных покупателей по всей России
+        </p>
+    </div>
+</section>
+
+<!-- Секция отзывов -->
+<section id="reviews" class="py-5 bg-dark">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Отзыв 1 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                <div class="card h-100 review-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="card-title mb-0">Иван К.</h5>
+                            <div class="rating text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="card-text text-white-50">Заказывал GTX 1080 Ti, пришла за 3 дня. Карта как новая, все тесты проходит, температура в норме. Отличный продавец!</p>
+                        <div class="product-badge">GTX 1080 Ti</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Отзыв 2 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+                <div class="card h-100 review-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="card-title mb-0">Алексей М.</h5>
+                            <div class="rating text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="card-text text-white-50">Взял 5 штук RTX 2060 для игрового клуба. Все карты работают идеально, проблем нет уже 4 месяца. Буду заказывать еще!</p>
+                        <div class="product-badge">RTX 2060 (x5)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Отзыв 3 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 review-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="card-title mb-0">Дмитрий С.</h5>
+                            <div class="rating text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="card-text text-white-50">GTX 1070 Ti - просто огонь! За свои деньги лучший вариант. Доставка быстрая, упаковка надежная.</p>
+                        <div class="product-badge">GTX 1070 Ti</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Отзыв 4 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                <div class="card h-100 review-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="card-title mb-0">Сергей В.</h5>
+                            <div class="rating text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="card-text text-white-50">Заказал RTX 2080, хотя сомневался из-за цены. Не пожалел ни на секунду - карта тянет все новинки на ультрах!</p>
+                        <div class="product-badge">RTX 2080</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Отзыв 5 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+                <div class="card h-100 review-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="card-title mb-0">Антон П.</h5>
+                            <div class="rating text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="card-text text-white-50">Оптовый заказ на 10 GTX 1060 6GB. Все карты пришли в заявленном состоянии, тестировал лично - все рабочие.</p>
+                        <div class="product-badge">GTX 1060 6GB (x10)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Отзыв 6 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 review-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="card-title mb-0">Михаил Л.</h5>
+                            <div class="rating text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="card-text text-white-50">GTX 1050 Ti для офисного ПК - отличный вариант за свои деньги. Шум минимальный, производительность хорошая.</p>
+                        <div class="product-badge">GTX 1050 Ti</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Отзыв 7 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                <div class="card h-100 review-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="card-title mb-0">Артем К.</h5>
+                            <div class="rating text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="card-text text-white-50">RTX 2070 - мечта! Работает тихо, температуры отличные. Спасибо за честное описание состояния.</p>
+                        <div class="product-badge">RTX 2070</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Отзыв 8 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+                <div class="card h-100 review-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="card-title mb-0">Евгений Р.</h5>
+                            <div class="rating text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="card-text text-white-50">Заказывал 3 GTX 1080 для майнинга. Все карты работают стабильно, обслуживание на высшем уровне.</p>
+                        <div class="product-badge">GTX 1080 (x3)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Отзыв 9 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 review-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="card-title mb-0">Виктор С.</h5>
+                            <div class="rating text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="card-text text-white-50">GTX 1070 - отличное соотношение цена/качество. Карта как новая, хотя и б/у. Рекомендую!</p>
+                        <div class="product-badge">GTX 1070</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Отзыв 10 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                <div class="card h-100 review-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="card-title mb-0">Павел Н.</h5>
+                            <div class="rating text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="card-text text-white-50">RTX 2060 за такую цену - это подарок! Карта работает идеально, все игры на высоких настройках.</p>
+                        <div class="product-badge">RTX 2060</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Отзыв 11 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+                <div class="card h-100 review-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="card-title mb-0">Андрей К.</h5>
+                            <div class="rating text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="card-text text-white-50">Заказал 8 GTX 1060 для небольшого клуба. Все карты пришли, как описано, проблем не обнаружено.</p>
+                        <div class="product-badge">GTX 1060 6GB (x8)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Отзыв 12 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 review-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="card-title mb-0">Николай З.</h5>
+                            <div class="rating text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="card-text text-white-50">GTX 1080 Ti - монстр! Тянет все современные игры в 2К. Спасибо за качественный товар.</p>
+                        <div class="product-badge">GTX 1080 Ti</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Отзыв 13 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                <div class="card h-100 review-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="card-title mb-0">Константин М.</h5>
+                            <div class="rating text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="card-text text-white-50">RTX 2070 - отличная карта за свои деньги. Доставка быстрая, упаковка надежная. Рекомендую!</p>
+                        <div class="product-badge">RTX 2070</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Отзыв 14 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+                <div class="card h-100 review-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="card-title mb-0">Роман С.</h5>
+                            <div class="rating text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="card-text text-white-50">Заказал GTX 1070 Ti для апгрейда. Карта работает безупречно, температура под нагрузкой не превышает 70°C.</p>
+                        <div class="product-badge">GTX 1070 Ti</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Отзыв 15 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 review-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="card-title mb-0">Денис П.</h5>
+                            <div class="rating text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="card-text text-white-50">RTX 2080 - просто космос! Все игры на ультрах в 1440p без проблем. Лучшая покупка за последние годы.</p>
+                        <div class="product-badge">RTX 2080</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer id="contacts" class="py-3">
+        <div class="container">
+            <div class="text-center mb-5">
+                <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4 map" >
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3727899248036!2d37.618423315930474!3d55.75393028055308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f52711!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1620000000000!5m2!1sru!2sru" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-6" >
+                    <h3 class="mb-4 text-neon">Оставить заявку</h3>
+                    <form id="order">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ваш Telegram (@ник)">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Какая видеокарта интересует?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 pulse">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

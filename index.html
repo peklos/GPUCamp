@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPU Camp – Видеокарты 10xx и 20xx серии</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --dark-green: #0a2e0a;
+            --neon-green: #00ff00;
+            --black: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" data-aos="fade-right" >
+                <img src="images/logo.png" alt="Логотип" class="me-2" width="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active" ><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">О компании</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Товары</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reviews.html">Отзывы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Герой-секция -->
+    <section class="hero-section text-center d-flex align-items-center">
+        <div class="container" data-aos="fade-up" data-aos-delay="300">
+            <h1 class="display-4 fw-bold mb-4 text-neon">
+                 Видеокарты 1xxx и 20xx серии <br> <span class="text-white">по суперцене!</span>
+            </h1>
+            <p class="lead mb-4" data-aos="fade-up" data-aos-delay="400">
+                <span class="text-danger fw-bold">Ограниченное предложение:</span> Только первые 10 клиентов получат скидку <strong>20%</strong>!
+            </p>
+            <div class="alert alert-dark mx-auto" style="max-width: 800px;" data-aos="fade-up" data-aos-delay="500">
+                <h4 class="text-neon"> Наши преимущества:</h4>
+                <ul class="text-start">
+                    <li class="text-white" data-aos="fade-right" data-aos-delay="600"> <strong>Гарантия 3 месяца</strong> – если не понравится, вернём деньги!</li>
+                    <li class="text-white" data-aos="fade-right" data-aos-delay="700"> <strong>Бесплатная доставка</strong> по Москве при заказе от 2 карт</li>
+                    <li class="text-white" data-aos="fade-right" data-aos-delay="800"> <strong>Тестирование перед продажей</strong> – никакого скрытого майнинга!</li>
+                </ul>
+            </div>
+            <a href="#products" class="btn btn-primary btn-lg mt-3 pulse button" data-aos="zoom-in" data-aos-delay="900">Смотреть видеокарты</a>
+        </div>
+    </section>
+
+    <!-- Карточки товаров -->
+    <section id="products" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="text-center mb-5 text-neon" data-aos="fade-up">Топ предложения</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100">
+                        <div class="position-relative">
+                            <img src="images/1080.png" class="card-img-top img-fluid w-100" alt="GTX 1080 Ti"  style="height: 300px; object-fit: cover;">
+                            <span class="position-absolute top-0 end-0 bg-success text-white px-2 py-1 m-2 small rounded">Гарантия 3 мес</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">NVIDIA GeForce GTX 1080 Ti</h5>
+                            
+                            <!-- Основные характеристики -->
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-white">Графический процессор:</span>
+                                    <span style="color: var(--neon-green);">GP102</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-white">Видеопамять:</span>
+                                    <span style="color: var(--neon-green);">11GB GDDR5X</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-white">Частота ядра:</span>
+                                    <span style="color: var(--neon-green);">1481-1582 MHz</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-white">CUDA ядер:</span>
+                                    <span style="color: var(--neon-green);">3584</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-white">Шина памяти:</span>
+                                    <span style="color: var(--neon-green);">352-bit</span>
+                                </div>
+                            </div>
+                    
+                            <!-- Состояние и особенности -->
+                            <div class="alert alert-dark p-2 mb-3">
+                                <div class="d-flex align-items-center mb-1">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small text-white">Тестировалась 48 часов в стресс-тестах</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-1">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small text-white">Не использовалась для майнинга</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small text-white">Оригинальная система охлаждения</span>
+                                </div>
+                            </div>
+                    
+                            <!-- Цена и кнопка -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="fw-bold mb-0 fs-4 text-white">15 000 ₽</p>
+                                    <p class="text-danger text-decoration-line-through mb-0 small">18 000 ₽</p>
+                                    <p class="text-success mb-0 small">Экономия 3 000 ₽</p>
+                                </div>
+                                <a href="#order" class="btn btn-primary px-4 py-2">
+                                    <i class="fas fa-shopping-cart me-2"></i>Заказать
+                                </a>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                        <div class="position-relative">
+                            <img src="images/2060.png" class="card-img-top img-fluid w-100" alt="RTX 2060 Super" style="height: 300px; object-fit: cover;">
+                            <span class="position-absolute top-0 end-0 bg-success text-white px-2 py-1 m-2 small rounded">Гарантия 3 мес</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">NVIDIA GeForce RTX 2060 Super</h5>
+                            
+                            <!-- Основные характеристики -->
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-white">Графический процессор:</span>
+                                    <span style="color: var(--neon-green);">TU106</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-white">Видеопамять:</span>
+                                    <span style="color: var(--neon-green);">8GB GDDR6</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-white">Частота ядра:</span>
+                                    <span style="color: var(--neon-green);">1470-1650 MHz</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-white">CUDA ядер:</span>
+                                    <span style="color: var(--neon-green);">2176</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-white">Шина памяти:</span>
+                                    <span style="color: var(--neon-green);">256-bit</span>
+                                </div>
+                            </div>
+                    
+                            <!-- Состояние и особенности -->
+                            <div class="alert alert-dark p-2 mb-3">
+                                <div class="d-flex align-items-center mb-1">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small text-white">Тестировалась 36 часов в стресс-тестах</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-1">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small text-white">Использовалась для майнинга 6 месяцев</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small text-white">Отличное состояние, почищена</span>
+                                </div>
+                            </div>
+                    
+                            <!-- Цена и кнопка -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="fw-bold mb-0 fs-4 text-white">12 000 ₽</p>
+                                    <p class="text-danger text-decoration-line-through mb-0 small">15 000 ₽</p>
+                                    <p class="text-success mb-0 small">Экономия 3 000 ₽</p>
+                                </div>
+                                <a href="#order" class="btn btn-primary px-4 py-2">
+                                    <i class="fas fa-shopping-cart me-2"></i>Заказать
+                                </a>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100">
+                        <div class="position-relative">
+                            <img src="images/1660.png" class="card-img-top img-fluid w-100" alt="1660 Super" style="height: 300px; object-fit: cover;">
+                            <span class="position-absolute top-0 end-0 bg-success text-white px-2 py-1 m-2 small rounded">Гарантия 6 мес</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">NVIDIA GeForce GTX 1660 Super</h5>
+                            
+                            <!-- Основные характеристики -->
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-white">Графический процессор:</span>
+                                    <span style="color: var(--neon-green);">TU116</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-white">Видеопамять:</span>
+                                    <span style="color: var(--neon-green);">6GB GDDR6</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-white">Частота ядра:</span>
+                                    <span style="color: var(--neon-green);">1530-1785 MHz</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-white">CUDA ядер:</span>
+                                    <span style="color: var(--neon-green);">1408</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-white">Шина памяти:</span>
+                                    <span style="color: var(--neon-green);">192-bit</span>
+                                </div>
+                            </div>
+                    
+                            <!-- Состояние и особенности -->
+                            <div class="alert alert-dark p-2 mb-3">
+                                <div class="d-flex align-items-center mb-1">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small text-white">Новая, в оригинальной упаковке</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-1">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small text-white">Гарантия производителя</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small text-white">Не использовалась в майнинге</span>
+                                </div>
+                            </div>
+                    
+                            <!-- Цена и кнопка -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="fw-bold mb-0 fs-4 text-white">10 000 ₽</p>
+                                    <p class="text-danger text-decoration-line-through mb-0 small">12 500 ₽</p>
+                                    <p class="text-success mb-0 small">Экономия 2 500 ₽</p>
+                                </div>
+                                <a href="#order" class="btn btn-primary px-4 py-2">
+                                    <i class="fas fa-shopping-cart me-2"></i>Заказать
+                                </a>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О компании -->
+    <section id="about" class="py-5" style="background-color: #0a0a0a;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="text-neon mb-4">О нашей компании</h2>
+                    <p>Мы специализируемся на продаже проверенных видеокарт уже более 5 лет. Все наши карты проходят тщательное тестирование перед продажей.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check text-neon me-2"></i> Более 1000 довольных клиентов</li>
+                        <li class="mb-2"><i class="fas fa-check text-neon me-2"></i> Только качественные комплектующие</li>
+                        <li class="mb-2"><i class="fas fa-check text-neon me-2"></i> Профессиональная консультация</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Наш офис" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Блок "Мы сотрудничаем" -->
+        <section class="py-5" style="background-color: var(--dark-green);">
+            <div class="container">
+                <h2 class="text-center mb-5 text-neon" data-aos="fade-up">Наши партнеры</h2>
+                <div class="row justify-content-center align-items-center g-4" data-aos="fade-up" data-aos-delay="100">
+                    <!-- DNS -->
+                    <div class="col-6 col-md-3 text-center">
+                        <div class="partner-card p-3 rounded-3 h-100 d-flex flex-column">
+                            <div class="partner-img-container mb-3">
+                                <img src="images/dns.jpeg" 
+                                     alt="DNS" 
+                                     class="img-fluid rounded-3"
+                                     style="height: 200px; width: 100%; object-fit: contain;">
+                            </div>
+                            <h4 class="text-white fw-bold mt-auto">DNS</h4>
+                        </div>
+                    </div>
+                    
+                    <!-- Эльдорадо -->
+                    <div class="col-6 col-md-3 text-center">
+                        <div class="partner-card p-3 rounded-3 h-100 d-flex flex-column">
+                            <div class="partner-img-container mb-3">
+                                <img src="images/eldorado.jpg" 
+                                     alt="Эльдорадо" 
+                                     class="img-fluid rounded-3"
+                                     style="height: 200px; width: 100%; object-fit: contain;">
+                            </div>
+                            <h4 class="text-white fw-bold mt-auto">Эльдорадо</h4>
+                        </div>
+                    </div>
+                    
+                    <!-- М.Видео -->
+                    <div class="col-6 col-md-3 text-center">
+                        <div class="partner-card p-3 rounded-3 h-100 d-flex flex-column">
+                            <div class="partner-img-container mb-3">
+                                <img src="images/mvideo.jpeg" 
+                                     alt="М.Видео" 
+                                     class="img-fluid rounded-3"
+                                     style="height: 200px; width: 100%; object-fit: contain;">
+                            </div>
+                            <h4 class="text-white fw-bold mt-auto">М.Видео</h4>
+                        </div>
+                    </div>
+                    
+                    <!-- Ситилинк -->
+                    <div class="col-6 col-md-3 text-center">
+                        <div class="partner-card p-3 rounded-3 h-100 d-flex flex-column">
+                            <div class="partner-img-container mb-3">
+                                <img src="images/citilink.jpg" 
+                                     alt="Ситилинк" 
+                                     class="img-fluid rounded-3"
+                                     style="height: 200px; width: 100%; object-fit: contain;">
+                            </div>
+                            <h4 class="text-white fw-bold mt-auto">Ситилинк</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Блок "Для чего нужны мощные видеокарты" -->
+        <section class="py-5" style="background-color: #0a0a0a;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2" data-aos="fade-up">
+                        <h2 class="text-neon mb-4">Зачем вам мощная видеокарта?</h2>
+                        <div class="feature-box mb-4">
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="fas fa-gamepad text-neon fs-3 me-3"></i>
+                                <div>
+                                    <h4 class="text-white">Гейминг</h4>
+                                    <p style="color: var(--neon-green);">Наслаждайтесь играми в 4K с максимальными настройками графики</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="fas fa-video text-neon fs-3 me-3"></i>
+                                <div>
+                                    <h4 class="text-white">Видеомонтаж</h4>
+                                    <p style="color: var(--neon-green);">Ускорьте рендеринг видео в Premiere Pro и DaVinci Resolve</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="fas fa-brain text-neon fs-3 me-3"></i>
+                                <div>
+                                    <h4 class="text-white">Машинное обучение</h4>
+                                    <p style="color: var(--neon-green);">Используйте CUDA-ядра для ускорения нейросетей</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-cube text-neon fs-3 me-3"></i>
+                                <div>
+                                    <h4 class="text-white">3D-моделирование</h4>
+                                    <p style="color: var(--neon-green);">Работайте с тяжелыми сценами в Blender и Maya без тормозов</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+                        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1478&q=80" 
+                             alt="Использование видеокарт" 
+                             class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <footer id="contacts" class="py-3">
+        <div class="container">
+            <div class="text-center mb-5">
+                <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4 map" >
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3727899248036!2d37.618423315930474!3d55.75393028055308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f52711!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1620000000000!5m2!1sru!2sru" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-6" >
+                    <h3 class="mb-4 text-neon">Оставить заявку</h3>
+                    <form id="order">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ваш Telegram (@ник)">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Какая видеокарта интересует?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 pulse">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

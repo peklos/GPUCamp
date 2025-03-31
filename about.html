@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-about.css">
+    <style>
+        :root {
+            --dark-green: #0a2e0a;
+            --neon-green: #00ff00;
+            --black: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" data-aos="fade-right" >
+                <img src="images/logo.png" alt="Логотип" class="me-2" width="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" ><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="about.html">О компании</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Товары</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reviews.html">Отзывы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section-about text-center d-flex align-items-center py-5" style="margin-top: 100px;">
+        <div class="container " data-aos="fade-up">
+            <h1 class="display-4 fw-bold mb-4 text-neon">О КОМПАНИИ</h1>
+            <p class="lead mb-4 text-white" data-aos="fade-up" data-aos-delay="100">
+                GPU Camp — это не просто магазин видеокарт, это сообщество энтузиастов, где технологии встречаются с passion
+            </p>
+        </div>
+    </section>
+
+    <!-- О компании -->
+    <section class="py-5" style="background-color: #0a0a0a;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="text-neon mb-4">Наша миссия</h2>
+                    <p class="text-white">Мы верим, что каждый заслуживает доступ к мощным графическим решениям без переплат. Наша цель — сделать высокопроизводительные видеокарты доступными для геймеров, дизайнеров и энтузиастов по всей России.</p>
+                    <p class="text-white">С 2018 года мы помогаем нашим клиентам находить идеальное графическое решение, сочетающее производительность, надежность и ценовую привлекательность.</p>
+                    <div class="d-flex align-items-center mt-4">
+                        <div class="me-4 text-center">
+                            <h3 class="text-neon">5+</h3>
+                            <p class="text-white mb-0">Лет на рынке</p>
+                        </div>
+                        <div class="me-4 text-center">
+                            <h3 class="text-neon">1500+</h3>
+                            <p class="text-white mb-0">Довольных клиентов</p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-neon">98%</h3>
+                            <p class="text-white mb-0">Положительных отзывов</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Наш офис" 
+                         class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Наши ценности -->
+    <section class="py-5" style="background-color: var(--dark-green);">
+        <div class="container">
+            <h2 class="text-center mb-5 text-neon" data-aos="fade-up">Наши ценности</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="value-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-shield-alt text-neon fs-1 me-3"></i>
+                            <h4 class="text-white mb-0">Надежность</h4>
+                        </div>
+                        <p class="text-white">Каждая видеокарта проходит 24-часовое тестирование в стресс-режиме. Мы проверяем температуру, стабильность и производительность, чтобы вы получили только проверенное железо.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="value-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-hand-holding-usd text-neon fs-1 me-3"></i>
+                            <h4 class="text-white mb-0">Доступность</h4>
+                        </div>
+                        <p class="text-white">Мы работаем напрямую с поставщиками и бывшими майнерами, чтобы предложить вам лучшие цены на рынке. Наши клиенты экономят до 40% по сравнению с новыми картами.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="value-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-headset text-neon fs-1 me-3"></i>
+                            <h4 class="text-white mb-0">Поддержка</h4>
+                        </div>
+                        <p class="text-white">Наши эксперты всегда на связи, чтобы помочь с выбором, установкой и настройкой. Мы не просто продаем видеокарты - мы помогаем вам получить от них максимум.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- История компании -->
+    <section class="py-5" style="background-color: #0a0a0a;">
+        <div class="container">
+            <h2 class="text-center mb-5 text-neon" data-aos="fade-up">Наша история</h2>
+            <div class="timeline" data-aos="fade-up">
+                <div class="timeline-item">
+                    <h4 class="text-neon">2018 - Начало</h4>
+                    <p class="text-white">GPU Camp начинался как небольшой проект трех энтузиастов, которые хотели сделать мощные видеокарты доступнее. Первые продажи - всего 5 карт в месяц.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4 class="text-neon">2019 - Первый офис</h4>
+                    <p class="text-white">Открыли первый тестовый центр в Москве, где клиенты могли лично проверить карты перед покупкой. Начали сотрудничество с локальными киберспортивными командами.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4 class="text-neon">2020 - Криптобум</h4>
+                    <p class="text-white">Разработали систему проверки карт после майнинга. Начали предлагать специальные условия для стримеров и контент-мейкеров.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4 class="text-neon">2021 - Партнерства</h4>
+                    <p class="text-white">Заключили партнерские соглашения с крупными игровыми центрами и студиями видеомонтажа. Запустили программу трейд-ина.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4 class="text-neon">2023 - Новые горизонты</h4>
+                    <p class="text-white">Расширили ассортимент до 50+ моделей видеокарт. Запустили услугу профессионального обслуживания и апгрейда ПК.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Наша команда -->
+    <section class="py-5" style="background-color: var(--dark-green);">
+        <div class="container">
+            <h2 class="text-center mb-5 text-neon" data-aos="fade-up">Наша команда</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-card bg-dark p-4 text-center rounded h-100">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+                             alt="Алексей Петров" 
+                             class="rounded-circle mb-3 img-fluid" 
+                             style="width: 150px; height: 150px; object-fit: cover;">
+                        <h4 class="text-neon">Алексей Петров</h4>
+                        <p class="text-white fw-bold">Основатель, технический директор</p>
+                        <p class="text-white">Бывший инженер NVIDIA с 10-летним опытом работы с графическими решениями. Отвечает за тестирование и проверку всех карт.</p>
+                        <div class="mt-3">
+                            <a href="#" class="text-neon me-2"><i class="fab fa-vk"></i></a>
+                            <a href="#" class="text-neon me-2"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="text-neon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-card bg-dark p-4 text-center rounded h-100">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" 
+                             alt="Елена Смирнова" 
+                             class="rounded-circle mb-3 img-fluid" 
+                             style="width: 150px; height: 150px; object-fit: cover;">
+                        <h4 class="text-neon">Елена Смирнова</h4>
+                        <p class="text-white fw-bold">Сооснователь, CEO</p>
+                        <p class="text-white">Специалист по маркетингу и клиентскому сервису. Создала уникальную систему поддержки клиентов, за которую нас любят.</p>
+                        <div class="mt-3">
+                            <a href="#" class="text-neon me-2"><i class="fab fa-vk"></i></a>
+                            <a href="#" class="text-neon me-2"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="text-neon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-card bg-dark p-4 text-center rounded h-100">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" 
+                             alt="Дмитрий Иванов" 
+                             class="rounded-circle mb-3 img-fluid" 
+                             style="width: 150px; height: 150px; object-fit: cover;">
+                        <h4 class="text-neon">Дмитрий Иванов</h4>
+                        <p class="text-white fw-bold">Главный инженер</p>
+                        <p class="text-white">Эксперт по ремонту и модернизации видеокарт. Разработал нашу систему диагностики, которая выявляет 99.9% проблем.</p>
+                        <div class="mt-3">
+                            <a href="#" class="text-neon me-2"><i class="fab fa-vk"></i></a>
+                            <a href="#" class="text-neon me-2"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="text-neon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как мы работаем -->
+    <section class="py-5" style="background-color: #0a0a0a;">
+        <div class="container">
+            <h2 class="text-center mb-5 text-neon" data-aos="fade-up">Как мы работаем</h2>
+            <div class="row g-4">
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-center p-3 h-100">
+                        <div class="bg-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" 
+                             style="width: 80px; height: 80px;">
+                            <i class="fas fa-search text-neon fs-3"></i>
+                        </div>
+                        <h4 class="text-neon">Отбор</h4>
+                        <p class="text-white">Тщательно выбираем поставщиков и проверяем происхождение каждой карты</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center p-3 h-100">
+                        <div class="bg-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" 
+                             style="width: 80px; height: 80px;">
+                            <i class="fas fa-tasks text-neon fs-3"></i>
+                        </div>
+                        <h4 class="text-neon">Тестирование</h4>
+                        <p class="text-white">24-часовой стресс-тест в FurMark и 3DMark для проверки стабильности</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center p-3 h-100">
+                        <div class="bg-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" 
+                             style="width: 80px; height: 80px;">
+                            <i class="fas fa-broom text-neon fs-3"></i>
+                        </div>
+                        <h4 class="text-neon">Обслуживание</h4>
+                        <p class="text-white">Чистка, замена термопасты и профилактика системы охлаждения</p>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-center p-3 h-100">
+                        <div class="bg-dark rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" 
+                             style="width: 80px; height: 80px;">
+                            <i class="fas fa-shipping-fast text-neon fs-3"></i>
+                        </div>
+                        <h4 class="text-neon">Доставка</h4>
+                        <p class="text-white">Бережная упаковка и быстрая отправка по всей России</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacts" class="py-3">
+        <div class="container">
+            <div class="text-center mb-5">
+                <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4 map" >
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3727899248036!2d37.618423315930474!3d55.75393028055308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f52711!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1620000000000!5m2!1sru!2sru" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-6" >
+                    <h3 class="mb-4 text-neon">Оставить заявку</h3>
+                    <form id="order">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ваш Telegram (@ник)">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Какая видеокарта интересует?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 pulse">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

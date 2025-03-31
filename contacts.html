@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши контакты</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-cont.css">
+    <style>
+        :root {
+            --dark-green: #0a2e0a;
+            --neon-green: #00ff00;
+            --black: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" data-aos="fade-right" >
+                <img src="images/logo.png" alt="Логотип" class="me-2" width="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" ><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">О компании</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Товары</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reviews.html">Отзывы</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contacts-page">
+        <div class="container">
+            <div class="contacts-header" data-aos="fade-down" style="margin-top: 50px;">
+                <h1 class="contacts-title">Наши контакты</h1>
+                <p class="contacts-subtitle">Свяжитесь с нами любым удобным способом. Мы всегда рады вашим вопросам, предложениям и отзывам!</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="contact-section">
+                        <h2 class="section-title">Наш офис</h2>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3 class="contact-title">Адрес</h3>
+                            <p class="contact-info">г. Москва, ул. Геймерская, д. 2077<br>Бизнес-центр "Cyberpunk", 13 этаж</p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3 class="contact-title">Часы работы</h3>
+                            <p class="contact-info">Пн-Пт: 10:00 - 20:00<br>Сб-Вс: 12:00 - 18:00</p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h3 class="contact-title">Телефон</h3>
+                            <p class="contact-info">+7 (495) 207-7207<br>+7 (800) 555-35-35 (бесплатно по РФ)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-section">
+                        <h2 class="section-title">Связаться с нами</h2>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3 class="contact-title">Email</h3>
+                            <p class="contact-info">info@gamepost.ru<br>support@gamepost.ru (техподдержка)</p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-comment-dots"></i>
+                            </div>
+                            <h3 class="contact-title">Онлайн-чат</h3>
+                            <p class="contact-info">Доступен на сайте 24/7<br>Среднее время ответа: 5 минут</p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="contact-title">Для сотрудничества</h3>
+                            <p class="contact-info">partners@gamepost.ru<br>PR-менеджер: +7 (916) 123-45-67</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-container" data-aos="zoom-in">
+                <iframe src="https://maps.google.com/maps?q=Москва&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+            <div class="social-section" data-aos="fade-up">
+                <h2 class="social-title">Мы в соцсетях</h2>
+                <div class="social-icons">
+                    <a href="#" class="social-icon vk-icon"><i class="fab fa-vk"></i></a>
+                    <a href="#" class="social-icon tg-icon"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="social-icon yt-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon discord-icon"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="social-icon steam-icon"><i class="fab fa-steam"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contacts" class="py-3">
+        <div class="container">
+            
+            
+            <div class="row">
+                <div class="col-md-6 mb-4 map" >
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3727899248036!2d37.618423315930474!3d55.75393028055308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f52711!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1620000000000!5m2!1sru!2sru" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-6" >
+                    <h3 class="mb-4 text-neon">Оставить заявку</h3>
+                    <form id="order">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ваш Telegram (@ник)">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Какая видеокарта интересует?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 pulse">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

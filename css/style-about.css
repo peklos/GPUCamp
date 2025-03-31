@@ -1,0 +1,57 @@
+:root {
+    --dark-green: #0a2e0a;
+    --neon-green: #00ff00;
+    --black: #000;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 50px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--neon-green);
+    border: 3px solid var(--dark-green);
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--neon-green);
+}
+
+.team-card {
+    transition: transform 0.3s;
+    border: 1px solid rgba(0, 255, 0, 0.2);
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 255, 0, 0.1);
+}
+
+.value-card {
+    border-left: 3px solid var(--neon-green);
+    transition: all 0.3s;
+}
+
+.value-card:hover {
+    background-color: rgba(10, 46, 10, 0.5);
+    transform: scale(1.03);
+}

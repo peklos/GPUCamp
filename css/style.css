@@ -1,0 +1,290 @@
+:root {
+    --dark-green: #0a2e0a;
+    --neon-green: #00ff00;
+    --black: #000;
+}
+
+body {
+    background-color: var(--black);
+    color: white;
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1591488320449-011701bb6704?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+    position: relative;
+}
+
+
+.navbar.scrolled {
+    background-color: var(--black) !important;
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.1);
+}
+
+.navbar {
+background: var(--black);
+font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+box-shadow: 0 4px 10px rgba(0, 255, 0, 0.1);;
+padding: 15px 0;
+}
+
+.navbar-brand img {
+transition: transform 0.3s;
+}
+
+.navbar-brand:hover img {
+transform: scale(1.05);
+}
+
+.nav-link {
+color: var(--neon-green) !important;
+letter-spacing: 1px;
+padding: 8px 20px !important;
+margin: 0 5px;
+border-radius: 5px;
+transition: all 0.3s;
+position: relative;
+text-transform: uppercase;
+font-size: 0.9rem;
+}
+
+.nav-link:hover {
+background-color: rgba(255, 255, 255, 0.1);
+transform: translateY(-2px);
+}
+
+.nav-link::after {
+content: "";
+position: absolute;
+width: 0;
+height: 2px;
+bottom: 0;
+left: 50%;
+background-color: var(--neon-green);
+transition: all 0.3s;
+}
+
+.nav-link:hover::after {
+width: 70%;
+left: 15%;
+}
+
+/* Стиль для активного пункта меню */
+.nav-item.active .nav-link {
+background-color: rgba(255, 255, 255, 0.1);
+transform: translateY(-2px);
+cursor: pointer;
+pointer-events: none;
+}
+
+.nav-item.active .nav-link::after {
+width: 70%;
+left: 15%;
+}
+
+/* Дополнительно можно добавить небольшое отличие для активного пункта */
+.nav-item.active .nav-link {
+font-weight: 700;
+text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.btn-primary {
+    background-color: var(--neon-green);
+    border: none;
+    color: var(--black);
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: .2s all !important;
+    border: 1px solid black;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.4);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid var(--neon-green);
+}
+
+.btn-primary:active {
+    background-color: rgb(0, 0, 0) !important;
+    border: 1px solid var(--neon-green) !important;
+    scale: 0.95;
+}
+
+.card {
+    background-color: #111;
+    border: 1px solid var(--neon-green);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0, 255, 0, 0.2);
+}
+
+.card-img-top {
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.card-title {
+    color: var(--neon-green);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 0, 0.1), transparent);
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    left: 100%;
+}
+
+footer {
+    background-color: black;
+    padding: 2rem 0;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
+}
+
+.social-icon {
+    font-size: 2rem;
+    margin: 0 15px;
+    color: var(--neon-green);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px) scale(1.05);
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+}
+
+.form-control {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid var(--neon-green);
+    color: white !important;
+    transition: all 0.3s ease;
+    /* border-radius: 10px; */
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 255, 0, 0.25);
+    border-color: var(--neon-green);
+}
+
+.alert-dark {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-left: 4px solid var(--neon-green);
+}
+
+.text-neon {
+    color: var(--neon-green);
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 255, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 0, 0);
+    }
+}
+
+.form-control::placeholder {
+    color: #6c757d; /* Серый цвет, как в Bootstrap по умолчанию */
+    opacity: 1; /* Фикс для Firefox */
+    font-style: italic;
+}
+
+.map {
+    border-radius: 15px; /* Регулируйте значение по вкусу */
+    overflow: hidden; /* Важно! Обрезает углы у iframe */
+}
+
+.map iframe {
+    border-radius: 15px; /* Дублируем для некоторых браузеров */
+    display: block; /* Убирает лишние отступы */
+}
+
+/* Стили для новых блоков */
+/* Стили для блока партнеров */
+.partner-card {
+    background-color: rgba(10, 46, 10, 0.7);
+    transition: all 0.3s ease;
+    border: 1px solid var(--neon-green);
+    display: flex;
+    flex-direction: column;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
+    background-color: rgba(10, 46, 10, 0.9);
+}
+
+.partner-img-container {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .partner-img-container {
+        height: 150px;
+    }
+    
+    .partner-card {
+        padding: 1rem !important;
+    }
+}
+
+.feature-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--neon-green);
+}
+
+::-webkit-scrollbar {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--neon-green);
+}
